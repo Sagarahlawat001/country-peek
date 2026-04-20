@@ -1,16 +1,39 @@
-# React + Vite
+# CountryPeek
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React application for searching and exploring country data, built with the RestCountries API. This project demonstrates skills in React hooks, Context API, state management with `useReducer`, and responsive web design.
 
-Currently, two official plugins are available:
+## Live Demo
+[https://sagar-git.github.io/country-peek/](https://sagar-git.github.io/country-peek/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
+- **Live Search**: Find countries by name with debounced API requests.
+- **Filtering & Sorting**: Filter by region and sort by alphabetical order or population.
+- **Favourites**: Save countries to a personal list that persists via `localStorage`.
+- **Responsive Design**: Optimized for mobile and desktop screens.
+- **Accessibility**: ARIA-labeled interactive elements and keyboard-navigable interface.
+- **Theme Support**: Persistent light/dark mode.
 
-## React Compiler
+## Tech Stack
+- **Frontend**: React 18, Vite
+- **Routing**: React Router v6
+- **State Management**: Context API + `useReducer`
+- **Data Source**: [RestCountries API](https://restcountries.com/)
+- **Deployment**: GitHub Pages
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Run Locally
 
-## Expanding the ESLint configuration
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/sagar-git/country-peek.git
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## License
+MIT
